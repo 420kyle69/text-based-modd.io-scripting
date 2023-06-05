@@ -1,0 +1,26 @@
+body {
+    overflow: hidden;
+}
+#editor { 
+    position: absolute;
+    top: 0;
+    right: 50%;
+    bottom: 0;
+    left: 0;
+    resize: horizontal;
+}
+#raw-json { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#controls, #controls > * {
+    margin: 5px;
+}
+#textarea {
+    height: 100%;
+}
