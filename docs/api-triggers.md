@@ -10,7 +10,7 @@
 |     |       |                     |         |
 
 <script type="module" src="../scripts/docs.js"></script>
-<script type="text/plain" id="script-to-run">
+<script>
   docs_fetchWithCache('../triggers.json').then(res => res.json()).then(res => {
     if (res.status !== 'success') {
       console.log('Non success response received from Modd.io API: %o', res);
