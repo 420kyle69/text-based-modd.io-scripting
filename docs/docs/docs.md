@@ -1,7 +1,7 @@
 <title>Docs</title>
 
 Text-based Modd.io Scripting converts Javascript syntax to JSON script format for Modd.io.
-[Editor](/)
+[Editor](..)
 
 - [Guide](#guide)
 - API Reference
