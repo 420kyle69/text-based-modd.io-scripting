@@ -5,11 +5,14 @@
 
 [Docs](./)
 
-| Key | Title | Configuration properties | Return type |
-
-| --- | ----- | ------------------------ | ----------- |
-
-|     |       |                          |             |
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Title</th>
+    <th>Configuration properties</th>
+    <th>Return type</th>
+  </tr>
+</table>
 
 <script type="module" src="../scripts/docs.js"></script>
 <script type="module">
