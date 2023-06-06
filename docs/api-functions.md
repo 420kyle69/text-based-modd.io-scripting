@@ -1,13 +1,14 @@
 <title>API Functions</title>
 
 # API Reference
-[Actions](#api-actions) | **Functions** | [Triggers](#api-triggers)
+[Actions](./api-actions.html) | **Functions** | [Triggers](./api-triggers.html)
 
-[Docs](#docs)
+[Docs](./docs.html)
 
 | Key | Title | Configuration properties | Return type |
 | --- | ----- | ------------------------ | ----------- |
 
+<script type="module" src="../scripts/docs.js"></script>
 <script type="text/plain" id="script-to-run">
   docs_fetchWithCache('../functions.json').then(res => res.json()).then(res => {
     if (res.status !== 'success') {

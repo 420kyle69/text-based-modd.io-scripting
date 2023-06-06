@@ -1,7 +1,7 @@
 <title>Guide</title>
 
 A guide to Text-based Modd.io Scripting.
-[Docs](#docs)
+[Docs](./docs.html)
 
 ---
 
@@ -16,7 +16,7 @@ sendChatMessage({
 ```
 All valid action names can be found in the source code of the Taro game engine: [ActionComponent.js](https://github.com/moddio/taro/blob/master/src/gameClasses/components/script/ActionComponent.js)
 
-The configuration properties that should be passed to each action can be found [here](#api-actions).
+The configuration properties that should be passed to each action can be found [here](./api-actions.html).
 
 # Functions
 Functions are run in a similar way to actions:
@@ -36,7 +36,7 @@ sendChatMessageToPlayer({
 ```
 All valid function names can be found in the source code of the Taro game engine: [VariableComponent.js](https://github.com/moddio/taro/blob/master/src/gameClasses/components/script/VariableComponent.js)
 
-The configuration properties that should be passed to each function can be found [here](#api-functions).
+The configuration properties that should be passed to each function can be found [here](./api-functions.html).
 
 # Setting variables
 Variables cannot be declared in Modd.io, so use global variables instead. To access global variables, use identifiers. The increment (`++`) and decrement (`--`) operators can be used to change a number variable's value by 1. Here are the four global variable accessor functions and their respective shorthands:
@@ -84,7 +84,7 @@ sendChatMessage({
     message: 'Game started.'
 });
 ```
-All valid trigger names can be found [here](#api-triggers).
+All valid trigger names can be found [here](./api-triggers.html).
 
 # Script names
 The script name is set by `@scriptName` tags of JSDoc comments.

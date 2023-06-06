@@ -1,19 +1,5 @@
 const CURRENT_CACHE = 'docs_cache_v4';
 
-const markdownContainer = document.getElementById('content');
-function loadMarkdown(text) {
-  markdownContainer.innerHTML = marked.parse(text);
-  hljs.highlightAll({ cssSelector: '#content pre' });
-  markdownContainer.querySelectorAll('table').forEach(table => {
-    table.classList.add('table');
-  });
-  const scriptToRun = markdownContainer.querySelector('script#script-to-run');
-  if (scriptToRun) {
-    const script = document.createElement('script');
-    script.append(scriptToRun.textContent);
-    markdownContainer.replaceChild(script, scriptToRun);
-  }
-}
 caches.keys().then(keys => {
   keys.forEach(key => {
     if (key !== CURRENT_CACHE) {
@@ -39,15 +25,3 @@ window.docs_fetchWithCache = async (url, options) => {
     return res;
   });
 };
-window.onhashchange = () => {
-  docs_fetchWithCache(`/docs/docs/${location.hash.slice(1)}.md`).then(res => {
-    if (res.ok) {
-      res.text().then(loadMarkdown);
-    }
-  });
-};
-if (location.hash) {
-  onhashchange();
-} else {
-  location.hash = 'docs';
-}

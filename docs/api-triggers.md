@@ -1,13 +1,14 @@
 <title>API Triggers</title>
 
 # API Reference
-[Actions](#api-actions) | [Functions](#api-functions) | **Triggers**
+[Actions](./api-actions.html) | [Functions](./api-functions.html) | **Triggers**
 
-[Docs](#docs)
+[Docs](./docs.html)
 
 | Key | Title | Parameters provided | Used in |
 | --- | ----- | ------------------- | ------- |
 
+<script type="module" src="../scripts/docs.js"></script>
 <script type="text/plain" id="script-to-run">
   docs_fetchWithCache('../triggers.json').then(res => res.json()).then(res => {
     if (res.status !== 'success') {
