@@ -25,3 +25,10 @@ window.docs_fetchWithCache = async (url, options) => {
     return res;
   });
 };
+const markdownContainer = document.getElementsByClassName('markdown-body')[0],
+  scriptToRun = markdownContainer.querySelector('script#script-to-run');
+if (scriptToRun) {
+  const script = document.createElement('script');
+  script.textContent = scriptToRun.textContent;
+  markdownContainer.replaceChild(script, scriptToRun);
+}

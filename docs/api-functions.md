@@ -15,7 +15,7 @@
 </table>
 
 <script type="module" src="../scripts/docs.js"></script>
-<script type="module">
+<script type="text/plain" id="script-to-run">
   docs_fetchWithCache('../functions.json').then(res => res.json()).then(res => {
     if (res.status !== 'success') {
       console.log('Non success response received from Modd.io API: %o', res);
