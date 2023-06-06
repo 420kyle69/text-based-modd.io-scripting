@@ -1,7 +1,7 @@
 <title>Guide</title>
 
 A guide to Text-based Modd.io Scripting.
-[Docs](./docs.html)
+[Docs](./)
 
 ---
 

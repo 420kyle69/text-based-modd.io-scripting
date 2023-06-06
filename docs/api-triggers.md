@@ -3,7 +3,7 @@
 # API Reference
 [Actions](./api-actions.html) | [Functions](./api-functions.html) | **Triggers**
 
-[Docs](./docs.html)
+[Docs](./)
 
 | Key | Title | Parameters provided | Used in |
 | --- | ----- | ------------------- | ------- |
