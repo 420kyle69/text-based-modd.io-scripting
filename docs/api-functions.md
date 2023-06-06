@@ -7,6 +7,7 @@
 
 | Key | Title | Configuration properties | Return type |
 | --- | ----- | ------------------------ | ----------- |
+
 |     |       |                          |             |
 
 <script type="module" src="../scripts/docs.js"></script>
